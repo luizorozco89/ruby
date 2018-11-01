@@ -56,8 +56,11 @@ puts "Using upto method:"
     puts "This is number #{i}"
 end
 
+# step method is used to do sequences of numbers, moving from a number to another one
+# specifying how many numbers to jump instead of going one by one
 
-
+puts "Using step method to display numbers 5 by 5 until 100"
+0.step(100, 5) { |num| puts "Number #{num}" }
 
 
 
