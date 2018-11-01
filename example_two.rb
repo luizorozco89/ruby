@@ -6,3 +6,9 @@ p 5 == "5"
 # this could lead to errors in the code
 p 5 == 5.0
 
+def myFun(a, b)
+    a + b
+end
+
+p myFun(2, 3)
+
