@@ -51,5 +51,15 @@ p "Luis".concat(" Orozco")
 
 puts "Extracting the last character into a string"
 p "Real Madrid"[-1]
+p "Real Madrid".slice(-1)
 puts "Extracting the character before the last one into a string"
 p "Real Madrid"[-2]
+p "Real Madrid".slice(-2)
+
+# Extracting several characters("Madrid") from a string
+# [index, Num_characters]
+
+p "Real Madrid is the best team in the world"[5, 6]
+p "Real Madrid is the best team in the world".slice(5, 6)
+
+
