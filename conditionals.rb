@@ -58,15 +58,70 @@ p 10.respond_to?(:next)
 
 p 10 > 3 ? "Yes, it is" : "No, it's not"
 
+# Case statement
 
+def operations(a,b,option) 
+    case option.downcase
+    when "add"
+        a + b
+    when "substract"
+        a - b
+    when "divide"
+        a / b 
+    else
+        "Sorry, we don't recognize that operation"
+    end
+end
 
+puts operations(10, 5, "Add")
+puts operations(20, 10, "Substract") 
+puts operations(8, 4, "Divide")
+puts operations(3, 5, "Destroy")
 
+# Shorter syntax for case statement(using range)
 
+def calcGrade(points) 
+    case points
+    when 90..100 then "A"
+    when 80..89 then "B"
+    when 70..79 then "C"
+    when 60..69 then "D"
+    else "F"
+    end
+end
 
+p calcGrade(95)
 
+puts "Converting a string value into a boolean value"
+p !!""
 
+# unless statement will execute the code if the statement evaluates to false
 
+psswrd = "topsecret"
 
+unless psswrd == "mypsswrd" 
+    p "Wrong password, please try again"
+else
+    p "Access allowed"
+end
+
+# while statement
+
+i = 1
+
+while i < 11 
+    puts i 
+    i += 1
+end
+
+# until statement
+
+j = 1
+
+until j > 10 
+    puts j 
+    j += 1
+end
 
 
 

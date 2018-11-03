@@ -44,9 +44,17 @@ end
 
 p areaSquare(4)
 
+# Invoking a method from inside another method
 
+def outterMethod 
+    "I'm the outter method"
+end
 
+def innerMethod 
+    p outterMethod
+end
 
+innerMethod
 
 
 
