@@ -2,6 +2,16 @@
 # Creating a class Person
 
 class Person 
+    # Accessor methods allow us to create getters and getters automatcally
+    # Ruby writes the syntax for us, we just nedd to specify the name of the variables
+    # using a symbol, and also if they will be a getter, a setter or both
+    # accessor => getter and setter
+    # reader => getter
+    # writer => setter
+    attr_accessor :name
+    attr_accessor :age
+    attr_writer :last_name
+
     # class variables are prefiexed by @@
     @@my_class_var = "I am a class var"
     # This is the contructor method
@@ -15,19 +25,19 @@ class Person
     end
 
     # Defining a getter for instance variable "@name"
-    def name 
-        @name
-    end
+    #def name 
+      #  @name
+    #end
 
     # Defining a getter for instance variable "@age"
-    def age 
-        @age
-    end
+    #def age 
+     #   @age
+    #end
 
     # Defining a setter/writer method
-    def last_name=(new_last_name) 
-        @last_name = new_last_name
-    end
+    #def last_name=(new_last_name) 
+        #@last_name = new_last_name
+    #end
 
     # This is an instance method
     def incAge 
@@ -70,12 +80,15 @@ luis.print_self
 
 # Getting instance variables values through the getters methods 
 # the names (.name and .age) are getters methods, not properties
-# Setting a new value to an instance variable using a setter/writer method
 
 puts luis.name
 puts luis.age
-puts luis.last_name=("OrozcoNew")
 
+# Setting a new value to an instance variable using a setter/writer method
+# both of the following syntax are valid
+
+puts luis.last_name=("OrozcoNew")
+puts luis.last_name = "OrozcoNew"
 
 
 
