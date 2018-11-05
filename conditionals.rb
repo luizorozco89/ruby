@@ -123,9 +123,13 @@ until j > 10
     j += 1
 end
 
+# Conditional assignment will assign a value to the variable only if the current value
+# of the variable is nill
 
-
-
+my_nil_var = nil
+p my_nil_var
+my_nil_var ||= 10
+puts my_nil_var
 
 
 
